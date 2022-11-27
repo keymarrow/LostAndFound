@@ -54,17 +54,17 @@ window.Laravel = {"csrfToken":"cm4ThVRMfsdwgdI2k3Eo1yFYaAaxrNm6BZGo4TJw","APP_UR
             <!-- Header Start -->
             <!-- Header Start -->
 <header id="header">
-    <div class="header-top">
+    <!-- <div class="header-top">
         <div class="container">
             <ul class="header-login clearfix">
                 				                <li><a href="../company/admin.html">BUSINESS LOGIN</a></li>
                 <li><a href="../user/login.html">CUSTOMER LOGIN</a></li>
                             </ul>
         </div>
-    </div>
+    </div> -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="../index.html"><img src="../public/assets/images/black_logo.png"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../public/assets/images/lostings-logo.png"></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="../public/assets/images/menu-bar.png">  
             </button>
@@ -403,7 +403,37 @@ function searchItemTop(){
             </div>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-sm-12">
+            <div>
+                <input type="hidden" name="recaptcha" id="recaptcha">
+            <button type="button" class="btn btn-primary btn-lg btn-fs-16 pull-right" onclick="window.lostings.submitForm(this);" >Submit</button>
+            </div>
+        </div>
+        
+        <div class="col-sm-12">
+            <div class="text-right feature_chk">
+                    <p>
+                        <label class="checkbox style-checkbox lg feature_item_lbl text-right text_descriptive">
+                            <input type="hidden" name="feature_item" value="0">
+                            <input id="feature_item" checked="checked" name="feature_item" type="checkbox" value="1">
+                            <!-- Feature Item -->
+                            Feature This Post*
+                            <span class="check-style">
+                                <em class="fa fa-check"></em>
+                            </span>
+                        </label>
+                    </p>
+                    <!-- <span class="label-detail feature_price">(Only $19.95)</span>
+                    <span class="label-detail feature_text">    
+                        <p>- Increase Visibility Across Our Vast Network</p>
+                        <p>- Maximize Probability to Find What You&#039;ve Lost</p>
+                        <p>- Enhance Chance of Retrieving Your Lost Items</p>
+                    </span> -->
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="property-form-block">
         <!-- <div class="property-form-body">
             <div class="row">
